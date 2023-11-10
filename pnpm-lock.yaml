@@ -79,6 +79,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.27
     version: 8.4.31
+  postcss-import:
+    specifier: ^15.1.0
+    version: 15.1.0(postcss@8.4.31)
   prettier:
     specifier: ^3.0.0
     version: 3.0.3

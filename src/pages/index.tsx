@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Container from '~/features/ui/components/Container';
+import HeroSection from '~/features/ui/homepages/HeroSection';
 import Navbar from '~/features/ui/navbar';
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       <main className="bg-white-10">
         <Container className="py-5">
           <Navbar />
+        </Container>
+        <Container className="py-[120px]">
+          <HeroSection />
         </Container>
       </main>
     </>

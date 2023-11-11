@@ -1,0 +1,91 @@
+import React from 'react';
+import Button from '../components/ฺButton';
+import Star from '/public/assets/icon/star.svg';
+import Image from 'next/image';
+
+const HeroSection = () => {
+  return (
+    <div className="relative flex justify-between">
+      <div>
+        <h1 className="header-1 font-plus text-black-80">Enhance your</h1>
+        <h1 className="header-1 text-gradient font-plus">Collaboration</h1>
+        <h1 className="header-1 text-gradient font-plus">& Productivity</h1>
+        <p className="body-1 my-8 text-black-70">
+          with our workspace, where collaboration
+          <br />
+          meets effective innovation, empowering
+          <br />
+          you to accomplish goal
+        </p>
+        <div className="flex gap-4">
+          <Button className="text-[24px] shadow-[4px_4px_20px_0px_rgba(128,128,128,0.7)] duration-[400ms] hover:-translate-y-1 hover:opacity-[0.88]">
+            Get started
+          </Button>
+          <div>
+            <div className="mb-1 flex gap-1 p-[2px]">
+              <Image priority src={Star} alt="Star" />
+              <Image priority src={Star} alt="Star" />
+              <Image priority src={Star} alt="Star" />
+              <Image priority src={Star} alt="Star" />
+              <Image priority src={Star} alt="Star" />
+            </div>
+            <p className="body-3 text-black-60">
+              More than 5000+ five
+              <br />
+              stars users reviews
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="relative z-10 translate-x-4">
+        <Image
+          priority
+          src="/assets/images/board.png"
+          alt="Working board"
+          width={680}
+          height={416}
+          className="scale-95"
+          // layout="responsive"
+        />
+        <div className="absolute -bottom-0 left-0">
+          <Image
+            priority
+            src="/assets/images/myself.png"
+            alt="Myself"
+            width={209}
+            height={192}
+
+            // layout="responsive"
+          />
+        </div>
+        <div className="absolute -top-3 right-0">
+          <Image
+            priority
+            src="/assets/images/team-member.png"
+            alt="Team member"
+            width={208}
+            height={301}
+            // layout="responsive"
+          />
+        </div>
+        <div className="absolute -bottom-2 right-0">
+          <Image
+            priority
+            src="/assets/images/chat.png"
+            alt="Chat"
+            width={208}
+            height={272}
+            // layout="responsive"
+          />
+        </div>
+      </div>
+      <div className="absolute -top-[100px] right-0 h-[300px] w-[300px] rotate-6 opacity-[0.48] blur-[70px]">
+        <div className="absolute left-0 top-5 h-[200px] w-[200px] bg-blue-30"></div>
+        <div className="absolute right-0 top-0 h-[200px] w-[200px] bg-pink-30"></div>
+        <div className="absolute bottom-0 right-5 h-[200px] w-[200px] bg-orange-30"></div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;

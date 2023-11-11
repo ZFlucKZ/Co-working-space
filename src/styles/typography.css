@@ -1,29 +1,43 @@
 @layer utilities {
   .header-1 {
-    @apply text-black-80 text-[64px] font-extrabold leading-none;
+    @apply text-[64px] font-extrabold leading-none text-black-80;
   }
 
   .header-2 {
-    @apply text-black-80 text-[48px] font-extrabold leading-tight;
+    @apply text-[48px] font-extrabold leading-tight text-black-80;
   }
 
   .sub-header-1 {
-    @apply text-black-80 text-[40px] font-bold leading-tight;
+    @apply text-[40px] font-bold leading-tight text-black-80;
   }
 
   .sub-header-2 {
-    @apply text-black-80 text-[32px] font-bold leading-tight;
+    @apply text-[32px] font-bold leading-tight text-black-80;
   }
 
   .body-1 {
-    @apply text-black-80 text-[24px] font-normal leading-normal;
+    @apply text-[24px] font-normal leading-normal text-black-80;
   }
 
   .body-2 {
-    @apply text-black-80 text-[16px] font-normal leading-normal;
+    @apply text-[16px] font-normal leading-normal text-black-80;
   }
 
   .body-3 {
-    @apply text-black-80 text-[12px] font-normal leading-normal;
+    @apply text-[12px] font-normal leading-normal text-black-80;
+  }
+
+  .text-gradient {
+    @apply text-black-80;
+
+    &:hover {
+      @apply bg-gradient-to-r from-[#55c1e5] via-[#fd71afe6] to-[#ffc48dcc] bg-clip-text text-transparent transition duration-[400ms];
+    }
   }
 }
+
+/* opacity-0 hover:opacity-100 transition duration-500 absolute inset-0 h-full w-full bg-gradient-to-b from-gray-400 to-gray-900 */
+
+/* @apply bg-black-80 bg-gradient-to-r from-black-80 from-0% via-black-80 via-50% to-black-80 to-100% bg-clip-text text-transparent transition-all duration-500 hover:bg-gradient-to-r hover:from-[#55c1e5] hover:from-0% hover:via-[#fd71afe6] hover:via-50% hover:to-[#ffc48dcc] hover:to-100%; */
+
+/* to-white via-black from-red-500 bg-size-200 bg-pos-0 hover:bg-pos-100 bg-clip-text text-transparent */

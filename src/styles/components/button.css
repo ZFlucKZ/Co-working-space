@@ -1,0 +1,13 @@
+@layer components {
+  .btn {
+    @apply rounded-lg px-6 py-3 text-[16px] font-semibold leading-none;
+  }
+
+  .btn-default {
+    @apply bg-black-80 text-white-10;
+  }
+
+  .btn-transparent {
+    @apply bg-transparent p-0;
+  }
+}

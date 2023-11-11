@@ -4,9 +4,23 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
   content: ['./src/**/*.tsx'],
   theme: {
+    screens: {
+      xl: { max: '1279px' },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: '1023px' },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: '767px' },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: '639px' },
+      // => @media (max-width: 639px) { ... }
+    },
     extend: {
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans-serif'],
+        sans: ['Hanken Grotesk', 'sans-serif'],
+        plus: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         blue: {

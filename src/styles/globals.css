@@ -1,35 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import './typography.css';
+@import './components/button.css';
+@import './components/container.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-  .header-1 {
-    @apply text-black-80 text-[64px] font-extrabold leading-none;
-  }
-
-  .header-2 {
-    @apply text-black-80 text-[48px] font-extrabold leading-tight;
-  }
-
-  .sub-header-1 {
-    @apply text-black-80 text-[40px] font-bold leading-tight;
-  }
-
-  .sub-header-2 {
-    @apply text-black-80 text-[32px] font-bold leading-tight;
-  }
-
-  .body-1 {
-    @apply text-black-80 text-[24px] font-normal leading-normal;
-  }
-
-  .body-2 {
-    @apply text-black-80 text-[16px] font-normal leading-normal;
-  }
-
-  .body-3 {
-    @apply text-black-80 text-[12px] font-normal leading-normal;
-  }
-}

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Container from '~/features/ui/components/Container';
+import DetailSection from '~/features/ui/homepages/DetailSection';
 import HeroSection from '~/features/ui/homepages/HeroSection';
 import MarqueeHero from '~/features/ui/homepages/MarqueeHero';
 import Navbar from '~/features/ui/navbar';
@@ -21,6 +22,9 @@ export default function Home() {
         </Container>
         <Container>
           <MarqueeHero />
+        </Container>
+        <Container className="py-[112px]">
+          <DetailSection />
         </Container>
       </main>
     </>

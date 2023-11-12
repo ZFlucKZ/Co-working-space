@@ -2,6 +2,42 @@ import React from 'react';
 import Button from '../components/ฺButton';
 import Star from '/public/assets/icon/star.svg';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const motionContainer = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.3,
+      duration: 0.8,
+    },
+  },
+};
+
+const itemUp = {
+  hidden: { opacity: 0, y: -30 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
+const itemDown = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 const HeroSection = () => {
   return (
@@ -37,7 +73,12 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="relative z-10 translate-x-4">
+      <motion.div
+        className="relative z-10 translate-x-4"
+        variants={motionContainer}
+        initial="hidden"
+        animate="visible"
+      >
         <Image
           priority
           src="/assets/images/board.png"
@@ -47,7 +88,7 @@ const HeroSection = () => {
           className="scale-95"
           // layout="responsive"
         />
-        <div className="absolute -bottom-0 left-0">
+        <motion.div className="absolute -bottom-0 left-0" variants={itemDown}>
           <Image
             priority
             src="/assets/images/myself.png"
@@ -57,8 +98,8 @@ const HeroSection = () => {
 
             // layout="responsive"
           />
-        </div>
-        <div className="absolute -top-3 right-0">
+        </motion.div>
+        <motion.div className="absolute -top-3 right-0" variants={itemUp}>
           <Image
             priority
             src="/assets/images/team-member.png"
@@ -67,8 +108,8 @@ const HeroSection = () => {
             height={301}
             // layout="responsive"
           />
-        </div>
-        <div className="absolute -bottom-2 right-0">
+        </motion.div>
+        <motion.div className="absolute -bottom-2 right-0" variants={itemDown}>
           <Image
             priority
             src="/assets/images/chat.png"
@@ -77,8 +118,8 @@ const HeroSection = () => {
             height={272}
             // layout="responsive"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="absolute -top-[100px] right-0 h-[300px] w-[300px] rotate-6 opacity-[0.48] blur-[70px]">
         <div className="absolute left-0 top-5 h-[200px] w-[200px] bg-blue-30"></div>
         <div className="absolute right-0 top-0 h-[200px] w-[200px] bg-pink-30"></div>

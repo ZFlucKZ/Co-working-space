@@ -1,9 +1,9 @@
 import Marquee from 'react-fast-marquee';
-import Blossom from '/public/assets/icon/Blossom.png';
-import DoctorPlus from '/public/assets/icon/DoctorPlus.png';
-import Rise from '/public/assets/icon/Rise.png';
-import Scale from '/public/assets/icon/Scale.png';
-import SnowFlake from '/public/assets/icon/SnowFlake.png';
+import Blossom from '/public/assets/logo/Blossom.png';
+import DoctorPlus from '/public/assets/logo/DoctorPlus.png';
+import Rise from '/public/assets/logo/Rise.png';
+import Scale from '/public/assets/logo/Scale.png';
+import SnowFlake from '/public/assets/logo/SnowFlake.png';
 import Image from 'next/image';
 
 const MarqueeHero = () => {

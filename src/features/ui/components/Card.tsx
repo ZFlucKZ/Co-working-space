@@ -16,7 +16,13 @@ const Card = ({ children, size = 'md', className }: CardProps) => {
   }[size];
 
   return (
-    <div className={twMerge('border border-grey-40', sizeClass, className)}>
+    <div
+      className={twMerge(
+        'rounded-lg border border-grey-40',
+        sizeClass,
+        className,
+      )}
+    >
       {children}
     </div>
   );

@@ -5,8 +5,8 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
     screens: {
-      xl: { max: '1279px' },
-      // => @media (max-width: 1279px) { ... }
+      xl: { max: '1550px' },
+      // => @media (max-width: 1440px) { ... }
 
       lg: { max: '1023px' },
       // => @media (max-width: 1023px) { ... }

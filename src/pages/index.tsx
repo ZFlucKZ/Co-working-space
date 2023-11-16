@@ -3,6 +3,7 @@ import Container from '~/features/ui/components/Container';
 import DetailSection from '~/features/ui/homepages/DetailSection';
 import HeroSection from '~/features/ui/homepages/HeroSection';
 import MarqueeHero from '~/features/ui/homepages/MarqueeHero';
+import TestimonialSection from '~/features/ui/homepages/TestimonialSection';
 import Navbar from '~/features/ui/navbar';
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
         </Container>
         <Container className="py-[112px]">
           <DetailSection />
+        </Container>
+        <Container className="bg-gradient-2 px-0 py-[64px]">
+          <TestimonialSection />
         </Container>
       </main>
     </>

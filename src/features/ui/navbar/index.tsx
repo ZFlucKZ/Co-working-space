@@ -32,7 +32,9 @@ const Navbar = () => {
       </li>
       <li>
         <Link href="/login">
-          <Button size="sm">Login</Button>
+          <Button size="sm" hover="none">
+            Login
+          </Button>
         </Link>
       </li>
     </ul>

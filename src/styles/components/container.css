@@ -1,5 +1,5 @@
 @layer components {
   .container {
-    @apply mx-auto max-w-[1440px] px-[100px];
+    @apply w-screen px-[200px] xl:px-[100px];
   }
 }

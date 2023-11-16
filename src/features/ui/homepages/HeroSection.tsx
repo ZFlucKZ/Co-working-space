@@ -54,9 +54,7 @@ const HeroSection = () => {
           you to accomplish goal
         </p>
         <div className="flex gap-4">
-          <Button className="text-[24px] shadow-[4px_4px_20px_0px_rgba(128,128,128,0.7)] duration-[400ms] hover:-translate-y-1 hover:opacity-[0.88]">
-            Get started
-          </Button>
+          <Button className="text-[24px]">Get started</Button>
           <div>
             <div className="mb-1 flex gap-1 p-[2px]">
               <Image priority src={Star} alt="Star" />

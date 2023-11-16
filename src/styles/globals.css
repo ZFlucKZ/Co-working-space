@@ -3,6 +3,8 @@
 @import './typography.css';
 @import './components/button.css';
 @import './components/container.css';
+@import './components/card.css';
+@import './components/swiper.css';
 
 @tailwind base;
 @tailwind components;

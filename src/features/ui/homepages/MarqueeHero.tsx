@@ -13,12 +13,13 @@ const MarqueeHero = () => {
         Join 7000+ Highly Productive Teams
       </p>
       <Marquee gradient={true} pauseOnHover={true} speed={100}>
-        <div className="me-14 flex gap-14">
+        <div className="flex gap-14">
           <Image src={Blossom} alt="Blossom" />
           <Image src={DoctorPlus} alt="Doctor Plus" />
           <Image src={Rise} alt="Rise" />
           <Image src={Scale} alt="Scale" />
           <Image src={SnowFlake} alt="SnowFlake" />
+          {/* <Image src={Blossom} alt="Blossom" /> */}
         </div>
       </Marquee>
     </>

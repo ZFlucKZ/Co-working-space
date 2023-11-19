@@ -34,7 +34,7 @@ const SubscribeSection = () => {
         animation="none"
         className="relative z-10 shadow-[0px_4px_32px_4px_rgba(60,57,57,0.16)]"
       >
-        <h1 className="sub-header-2 text-black-80">
+        <h1 className="sub-header-2 font-plus text-black-80">
           Subscribe to our news letters
         </h1>
         <p className="body-2 mt-1 text-black-60">

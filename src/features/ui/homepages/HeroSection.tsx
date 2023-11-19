@@ -46,7 +46,7 @@ const HeroSection = () => {
         <h1 className="header-1 font-plus text-black-80">Enhance your</h1>
         <h1 className="header-1 text-gradient font-plus">Collaboration</h1>
         <h1 className="header-1 text-gradient font-plus">& Productivity</h1>
-        <p className="body-1 my-8 text-black-70">
+        <p className="body-1 my-6 text-black-70">
           with our workspace, where collaboration
           <br />
           meets effective innovation, empowering
@@ -79,7 +79,7 @@ const HeroSection = () => {
       >
         <Image
           priority
-          src="/assets/images/board.png"
+          src="/assets/images/home/board.png"
           alt="Working board"
           width={680}
           height={416}
@@ -89,7 +89,7 @@ const HeroSection = () => {
         <motion.div className="absolute -bottom-0 left-0" variants={itemDown}>
           <Image
             priority
-            src="/assets/images/myself.png"
+            src="/assets/images/home/myself.png"
             alt="Myself"
             width={209}
             height={192}
@@ -100,7 +100,7 @@ const HeroSection = () => {
         <motion.div className="absolute -top-3 right-0" variants={itemUp}>
           <Image
             priority
-            src="/assets/images/team-member.png"
+            src="/assets/images/home/team-member.png"
             alt="Team member"
             width={208}
             height={301}
@@ -110,7 +110,7 @@ const HeroSection = () => {
         <motion.div className="absolute -bottom-2 right-0" variants={itemDown}>
           <Image
             priority
-            src="/assets/images/chat.png"
+            src="/assets/images/home/chat.png"
             alt="Chat"
             width={208}
             height={272}

@@ -16,7 +16,7 @@
   }
 
   .body-1 {
-    @apply text-[24px] font-normal leading-normal;
+    @apply text-[24px] font-semibold leading-normal;
   }
 
   .body-2 {

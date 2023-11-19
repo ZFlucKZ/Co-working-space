@@ -4,7 +4,9 @@ import Button from '../components/ฺButton';
 const TestimonialSection = () => {
   return (
     <div className="relative flex flex-col items-center">
-      <h1 className="sub-header-1 mb-10">What people say about Co.</h1>
+      <h1 className="sub-header-1 mb-10 font-plus">
+        What people say about Co.
+      </h1>
       <div className="w-11/12">
         <CarouselComponents itemWidth={562} />
       </div>

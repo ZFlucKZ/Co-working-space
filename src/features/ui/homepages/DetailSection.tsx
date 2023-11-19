@@ -10,7 +10,7 @@ const DetailSection = () => {
       <CardAnimation className="mb-28 flex gap-16" animation="slideRight">
         <div className="basis-1/2">
           <Image
-            src="/assets/images/features.png"
+            src="/assets/images/home/features.png"
             alt="Co working space - Features"
             layout="responsive"
             width={460}
@@ -58,7 +58,7 @@ const DetailSection = () => {
         </div>
         <div className="basis-1/2">
           <Image
-            src="/assets/images/tools.png"
+            src="/assets/images/home/tools.png"
             alt="Co working space - Tools"
             layout="responsive"
             width={518}
@@ -85,7 +85,7 @@ const DetailSection = () => {
             <h6 className="body-1 mb-12 text-black-80">Collaboration</h6>
             <div>
               <Image
-                src="/assets/images/collaborate.png"
+                src="/assets/images/home/collaborate.png"
                 alt="Co working space - Collaborate"
                 layout="responsive"
                 width={270}
@@ -97,7 +97,7 @@ const DetailSection = () => {
             <h6 className="body-1 mb-12 text-black-80">Efficiency</h6>
             <div>
               <Image
-                src="/assets/images/efficiency.png"
+                src="/assets/images/home/efficiency.png"
                 alt="Co working space - Efficiency"
                 layout="responsive"
                 width={270}
@@ -109,7 +109,7 @@ const DetailSection = () => {
             <h6 className="body-1 mb-12 text-black-80">Productivity</h6>
             <div>
               <Image
-                src="/assets/images/productivity.png"
+                src="/assets/images/home/productivity.png"
                 alt="Co working space - Productivity"
                 layout="responsive"
                 width={270}

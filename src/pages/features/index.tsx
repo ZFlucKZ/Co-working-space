@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import Container from '~/features/ui/components/Container';
-import Footer from '~/features/ui/footer';
-import DetailSection from '~/features/ui/homepages/DetailSection';
-import HeroSection from '~/features/ui/homepages/HeroSection';
-import MarqueeHero from '~/features/ui/homepages/MarqueeHero';
-import SubscribeSection from '~/features/ui/homepages/SubscribeSection';
-import TestimonialSection from '~/features/ui/homepages/TestimonialSection';
+import DetailSection from '~/features/ui/featurePages/DetailSection';
+import HeroSection from '~/features/ui/featurePages/HeroSection';
+import GoSpaceSection from '~/features/ui/featurePages/GoSpaceSection';
 import Navbar from '~/features/ui/navbar';
+import Footer from '~/features/ui/footer';
 
 export default function Home() {
   return (
@@ -23,17 +21,11 @@ export default function Home() {
         <Container className="py-[120px]">
           <HeroSection />
         </Container>
-        <Container>
-          <MarqueeHero />
-        </Container>
         <Container className="py-[112px]">
           <DetailSection />
         </Container>
-        <Container className="bg-gradient-2 px-0 py-[64px]">
-          <TestimonialSection />
-        </Container>
-        <Container className="relative py-20">
-          <SubscribeSection />
+        <Container className="py-20">
+          <GoSpaceSection />
         </Container>
       </main>
       <footer className="bg-black-80">

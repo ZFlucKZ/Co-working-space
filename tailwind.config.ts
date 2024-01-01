@@ -1,65 +1,71 @@
-import { type Config } from 'tailwindcss';
-const defaultTheme = require('tailwindcss/defaultTheme');
-
-export default {
-  content: ['./src/**/*.tsx'],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ['class'],
+  content: ['./app/**/*.{ts,tsx}', './features/**/*.{ts,tsx}'],
   theme: {
-    screens: {
-      xl: { max: '1550px' },
-      // => @media (max-width: 1440px) { ... }
-
-      lg: { max: '1023px' },
-      // => @media (max-width: 1023px) { ... }
-
-      md: { max: '767px' },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: '639px' },
-      // => @media (max-width: 639px) { ... }
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
     },
     extend: {
-      fontFamily: {
-        sans: ['Hanken Grotesk', 'sans-serif'],
-        plus: ['Plus Jakarta Sans', 'sans-serif'],
-      },
       colors: {
-        blue: {
-          50: '#4196B2',
-          40: '#4FB4D6',
-          30: '#5ED6FF',
-          20: '#ABE9FF',
-          10: '#FCFDFE',
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
-        pink: {
-          50: '#B2507B',
-          40: '#D66094',
-          30: '#FF7DB7',
-          20: '#FFADD2',
-          10: '#FFFAFC',
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
         },
-        orange: {
-          50: '#B26C2B',
-          40: '#CC823D',
-          30: '#FFA959',
-          20: '#FFCFA3',
-          10: '#FFF8F2',
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
         },
-        black: {
-          80: '#33312B',
-          70: '#5C594F',
-          60: '#8C897F',
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
         },
-        grey: {
-          50: '#BFBDB5',
-          40: '#F0EEE7',
-          30: '#FDFCF9',
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
-        white: {
-          20: '#FAF9F5',
-          10: '#FFFEFB',
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
         },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [require('tailwindcss-animate')],
+};

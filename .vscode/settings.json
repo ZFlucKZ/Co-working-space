@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "javascript",
@@ -12,16 +12,16 @@
     "typescriptreact"
   ],
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[typescript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -29,5 +29,7 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

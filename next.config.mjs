@@ -4,14 +4,10 @@ const nextConfig = {
     dirs: ['.'],
   },
   redirects() {
-    return [
-      
-    ];
+    return [];
   },
   images: {
-    remotePatterns: [
-   
-    ],
+    remotePatterns: [],
   },
 };
 

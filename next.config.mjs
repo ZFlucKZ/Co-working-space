@@ -7,7 +7,7 @@ const nextConfig = {
     return [];
   },
   images: {
-    remotePatterns: [],
+    remotePatterns: [{ hostname: 'img.freepik.com' }],
   },
 };
 

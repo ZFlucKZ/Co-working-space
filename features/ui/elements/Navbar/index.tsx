@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import ButtonLink from '@/features/ui/components/Button';
+import Container from '@/features/ui/components/Container';
 
 const navigation = [
   { name: 'Workspaces', href: '/workspaces' },
@@ -18,42 +19,41 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav
-        className="mx-auto flex max-w-[1440px] items-center justify-between p-6 md:px-8"
-        aria-label="Global"
-      >
-        <Link href="/" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
-          <Image
-            src="/assets/logo/logo.png"
-            alt="Co space working logo"
-            width={64}
-            height={40}
-          />
-        </Link>
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black-80"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
-        <div className="hidden md:flex md:gap-x-12">
-          {navigation.map((item) => (
-            <div key={item.name} className="flex items-center">
-              <Link
-                href={item.href}
-                className="text-button-2 from-blue-50 via-pink-50 to-orange-50 text-black-80 hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:duration-300"
-              >
-                {item.name}
-              </Link>
-            </div>
-          ))}
-          <ButtonLink href="/sign-in">Login</ButtonLink>
-        </div>
+      <nav className="w-full shadow-mild ">
+        <Container className="flex items-center justify-between py-6">
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <Image
+              src="/assets/logo/logo.png"
+              alt="Co space working logo"
+              width={64}
+              height={40}
+            />
+          </Link>
+          <div className="flex md:hidden">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black-80"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="hidden md:flex md:gap-x-12">
+            {navigation.map((item) => (
+              <div key={item.name} className="flex items-center">
+                <Link
+                  href={item.href}
+                  className="from-blue-50 via-pink-50 to-orange-50 text-button-2 text-black-80 hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:duration-300"
+                >
+                  {item.name}
+                </Link>
+              </div>
+            ))}
+            <ButtonLink href="/sign-in">Login</ButtonLink>
+          </div>
+        </Container>
       </nav>
       <Dialog
         as="div"
@@ -89,7 +89,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-button-2 -mx-3 block rounded-lg px-3 py-2 text-black-80 hover:bg-gray-50 "
+                    className="-mx-3 block rounded-lg px-3 py-2 text-button-2 text-black-80 hover:bg-gray-50 "
                   >
                     {item.name}
                   </Link>

@@ -28,7 +28,7 @@ export default function RootLayout({
       {/* dark - light */}
       <body
         className={cn(
-          'm-auto min-h-screen max-w-[1440px] bg-white-10 font-sans antialiased',
+          'm-auto min-h-screen overflow-x-hidden bg-white-10 font-sans antialiased',
           fontSans.variable,
         )}
       >
